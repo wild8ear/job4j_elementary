@@ -4,7 +4,7 @@ public class Multiple {
 
     public static void main(String[] args) {
         int i = 1;
-        for(int count=2; count<10; count++) {
+        for(int count = 2; count<10; count++) {
             int result = i * count;
             System.out.println("" + i + " * " + count + " = " + result);
         }
