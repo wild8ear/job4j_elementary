@@ -6,7 +6,6 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.Assert.*;
 
 public class TriangleTest {
-
     @Test
     public void whenExist() {
         double ab = 2.0;
