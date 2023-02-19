@@ -4,6 +4,7 @@ import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class CounterTest {
+
     @Test
     public void whenSumEvenNumbersFromOneToTenThenThirty() {
         int start = 1;
