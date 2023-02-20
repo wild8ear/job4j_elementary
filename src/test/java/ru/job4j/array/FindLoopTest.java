@@ -6,7 +6,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class FindLoopTest {
     @Test
     public void whenArrayHas5Then0() {
-        int data[] = new int[] {5, 10, 3};
+        int[] data = new int[] {5, 10, 3};
         int el = 5;
         int result = FindLoop.indexOf(data, el);
         int expected = 0;
