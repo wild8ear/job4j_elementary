@@ -12,7 +12,7 @@ public class SwitchArray {
         int temp = array[0];
         array[0] = array[array.length - 1];
         array[array.length - 1] = temp;
-        return  array;
+        return array;
     }
 
     public static void main(String[] args) {

@@ -16,7 +16,6 @@ public class TwoNumberSum {
             }
             j++;
         }
-
         return rsl;
     }
 }
