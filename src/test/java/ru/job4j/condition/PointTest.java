@@ -6,35 +6,29 @@ import static org.junit.Assert.*;
 
 public class PointTest {
     @Test
-    public void when12to23Then1dot41() {
-        int x1 = 1;
-        int x2 = 2;
-        int y1 = 2;
-        int y2 = 3;
+    public void whenThis12Another23Then1dot41() {
+        Point a = new Point(1, 2);
+        Point b = new Point(2, 3);
         double expected = 1.41;
-        double out = Point.distance(x1, y1, x2, y2);
+        double out = a.distance(b);
         Assert.assertEquals(expected, out, 0.01);
     }
 
     @Test
-    public void when22to41Then3() {
-        int x1 = 2;
-        int x2 = 2;
-        int y1 = 4;
-        int y2 = 1;
+    public void whenThis24Another21Then3() {
+        Point a = new Point(2, 4);
+        Point b = new Point(2, 1);
         double expected = 3;
-        double out = Point.distance(x1, y1, x2, y2);
+        double out = a.distance(b);
         Assert.assertEquals(expected, out, 0.01);
     }
 
     @Test
-    public void when33to56Then1() {
-        int x1 = 3;
-        int x2 = 3;
-        int y1 = 5;
-        int y2 = 6;
+    public void whenThis35Another36Then1() {
+        Point a = new Point(3, 5);
+        Point b = new Point(3, 6);
         double expected = 1;
-        double out = Point.distance(x1, y1, x2, y2);
+        double out = a.distance(b);
         Assert.assertEquals(expected, out, 0.01);
     }
 }
