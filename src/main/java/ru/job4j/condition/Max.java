@@ -8,10 +8,10 @@ public class Max {
 
     public static int max(int a, int b, int c) {
 
-        return  Math.max(a, b) > c ? Math.max(a, b) : c;
+        return  max(max(a, b), c);
     }
 
     public static int max(int a, int b, int c, int d) {
-        return Math.max(a, b) > Math.max(c, d) ? Math.max(a, b) : Math.max(c, d);
+        return max(max(a, b), max(c, d));
     }
 }
