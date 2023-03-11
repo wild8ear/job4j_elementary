@@ -33,11 +33,11 @@ public class PointTest {
     }
 
     @Test
-    public void whenThis356Another367Then1() {
+    public void whenThis356Another367Then1dot41() {
         Point a = new Point(3, 5, 6);
         Point b = new Point(3, 6, 7);
-        double expected = 1;
-        double out = a.distance(b);
+        double expected = 1.41;
+        double out = a.distance3d(b);
         Assert.assertEquals(expected, out, 0.01);
     }
 
